@@ -32,7 +32,7 @@ repos <- readr::read_csv("repos.csv")
 # })
 last <- readr::read_csv("last_week.csv")
 res <- last
-
+# readr::write_csv(res, "last_week.csv")
 green_pal <- function(x) rgb(colorRamp(c("#00cc00", "#ffffff"))(x), maxColorValue = 255)
 ```
 
@@ -53,8 +53,28 @@ list(
 #| title: "Quarto extensions"
 list(
     icon = "stars",
-    color = "#cc0000",
+    color = "#0000cc",
     value = sum(repos$type == "Quarto extension")
+)
+```
+
+```{r}
+#| content: valuebox
+#| title: "New Stars"
+list(
+    icon = "stars",
+    color = "#DBAC34",
+    value = sum(res$stars) - sum(last$stars)
+)
+```
+
+```{r}
+#| content: valuebox
+#| title: "New issues"
+list(
+    icon = "stars",
+    color = "#cc0000",
+    value = sum(res$open_issues) - sum(last$open_issues)
 )
 ```
 
