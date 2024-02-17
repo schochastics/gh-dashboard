@@ -1,0 +1,95 @@
+---
+page-title: "Repository Dashboard"
+format: dashboard
+theme: darkly
+execute: 
+  echo: false
+---
+
+```{r}
+library(gh)
+library(dplyr)
+library(reactable)
+
+repos <- readr::read_csv("repos.csv")
+get_repo <- function(owner, repo) {
+    res_issues <- gh("/repos/{username}/{repo}/issues", username = owner, repo = repo)
+    res_repo <- gh("/repos/{username}/{repo}", username = owner, repo = repo)
+    tibble(
+        owner = owner,
+        repo = repo,
+        last_push = lubridate::as_datetime(res_repo[["pushed_at"]]),
+        stars = res_repo[["stargazers_count"]],
+        forks = res_repo[["forks"]],
+        open_issues = res_repo[["open_issues_count"]],
+        last_issue_activity = suppressWarnings(lubridate::as_datetime(max(purrr::map_chr(res_issues, \(x) x[["updated_at"]])))),
+    )
+}
+
+repos <- readr::read_csv("repos.csv")
+# res <- purrr::map_dfr(seq_len(nrow(repos)), \(x){
+#     get_repo(repos$owner[x], repos$repo[x])
+# })
+last <- readr::read_csv("last_week.csv")
+res <- last
+
+green_pal <- function(x) rgb(colorRamp(c("#00cc00", "#ffffff"))(x), maxColorValue = 255)
+```
+
+## Row
+
+```{r}
+#| content: valuebox
+#| title: "R packages"
+list(
+    icon = "stars",
+    color = "#0000cc",
+    value = sum(repos$type == "R package")
+)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Quarto extensions"
+list(
+    icon = "stars",
+    color = "#cc0000",
+    value = sum(repos$type == "Quarto extension")
+)
+```
+
+## Row
+
+```{r}
+# res$last_push <- as.character(lubridate::as_datetime(res$last_push))
+# res$last_issue_activity <- as.character(lubridate::as_datetime(res$last_issue_activity))
+
+reactable(
+    res,
+    columns = list(
+        owner = colDef(name = "Owner"),
+        repo = colDef(name = "Repository"),
+        last_push = colDef(
+            name = "Last Push",
+            style = function(value) {
+                normalized <- pmin(as.numeric(Sys.time() - value) / 365, 1)
+                color <- green_pal(normalized)
+                list(background = color, color = "black")
+            }
+        ),
+        stars = colDef(name = "Stars"),
+        forks = colDef(name = "Forks"),
+        open_issues = colDef(name = "Open Issues"),
+        last_issue_activity = colDef(
+            name = "Last Issue Activity",
+            style = function(value) {
+                color <- ifelse((Sys.time() - value) <= 7, "#cc0000", "#2D2D2D")
+                color[is.na(color)] <- "#2D2d2D"
+                list(background = color)
+            }
+        )
+    ),
+    defaultPageSize = nrow(repos),
+    theme = reactableTheme(backgroundColor = "#2D2D2D")
+)
+```
