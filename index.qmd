@@ -66,13 +66,15 @@ list(
 
 reactable(
     res,
+    defaultSorted = list(last_issue_activity = "desc"),
     columns = list(
         owner = colDef(name = "Owner"),
         repo = colDef(name = "Repository"),
         last_push = colDef(
             name = "Last Push",
+            format = colFormat(datetime = TRUE),
             style = function(value) {
-                normalized <- pmin(as.numeric(Sys.time() - value) / 365, 1)
+                normalized <- pmin(difftime(Sys.time(), value, units = "days") / 365, 1)
                 color <- green_pal(normalized)
                 list(background = color, color = "black")
             }
@@ -82,8 +84,9 @@ reactable(
         open_issues = colDef(name = "Open Issues"),
         last_issue_activity = colDef(
             name = "Last Issue Activity",
+            format = colFormat(datetime = TRUE),
             style = function(value) {
-                color <- ifelse((Sys.time() - value) <= 7, "#cc0000", "#2D2D2D")
+                color <- ifelse(difftime(Sys.time(), value, units = "days") <= 7, "#cc0000", "#2D2D2D")
                 color[is.na(color)] <- "#2D2d2D"
                 list(background = color)
             }
