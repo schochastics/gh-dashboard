@@ -15,10 +15,7 @@ jobs:
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages: |
-            any::readr 
             any::lubridate
-            any::tibble
-            any::purrr
             any::gh
 
       - name: Check out repository
