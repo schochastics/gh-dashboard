@@ -3,6 +3,8 @@ library(gh)
 repos <- read.csv("repos.csv", row.names = NULL)
 get_repo <- function(owner, repo) {
     res_issues <- gh("/repos/{username}/{repo}/issues", username = owner, repo = repo)
+    last_activity <- max(sapply(res_issues, \(x) x[["updated_at"]]))
+
     res_repo <- gh("/repos/{username}/{repo}", username = owner, repo = repo)
     data.frame(
         owner = owner,
@@ -11,7 +13,7 @@ get_repo <- function(owner, repo) {
         stars = res_repo[["stargazers_count"]],
         forks = res_repo[["forks"]],
         open_issues = res_repo[["open_issues_count"]],
-        last_issue_activity = suppressWarnings(lubridate::as_datetime(max(purrr::map_chr(res_issues, \(x) x[["updated_at"]]))))
+        last_issue_activity = suppressWarnings(lubridate::as_datetime(last_activity))
     )
 }
 
