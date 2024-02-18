@@ -3,7 +3,11 @@ library(gh)
 repos <- read.csv("repos.csv", row.names = NULL)
 get_repo <- function(owner, repo) {
     res_issues <- gh("/repos/{username}/{repo}/issues", username = owner, repo = repo)
-    last_activity <- max(sapply(res_issues, \(x) x[["updated_at"]]))
+    if (length(res_issues) != 0) {
+        last_activity <- max(sapply(res_issues, \(x) x[["updated_at"]]))
+    } else {
+        last_activity <- ""
+    }
 
     res_repo <- gh("/repos/{username}/{repo}", username = owner, repo = repo)
     data.frame(

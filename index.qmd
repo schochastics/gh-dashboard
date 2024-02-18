@@ -8,9 +8,9 @@ execute:
 
 ```{r}
 library(reactable)
-repos <- readr::read_csv("repos.csv")
-last <- readr::read_csv("last_week.csv")
-res <- readr::read_csv("current_week.csv")
+repos <- read.csv("repos.csv", row.names = FALSE)
+last <- read.csv("last_week.csv", row.names = FALSE)
+res <- read.csv("current_week.csv", row.names = FALSE)
 
 green_pal <- function(x) rgb(colorRamp(c("#00cc00", "#ffffff"))(x), maxColorValue = 255)
 ```
