@@ -8,11 +8,11 @@ execute:
 
 ```{r}
 library(reactable)
-repos <- read.csv("repos.csv", row.names = FALSE)
-last <- read.csv("last_week.csv", row.names = FALSE)
-res <- read.csv("current_week.csv", row.names = FALSE)
+repos <- read.csv("repos.csv", row.names = NULL)
+last <- read.csv("last_week.csv", row.names = NULL)
+res <- read.csv("current_week.csv", row.names = NULL)
 
-green_pal <- function(x) rgb(colorRamp(c("#00cc00", "#ffffff"))(x), maxColorValue = 255)
+green_pal <- function(x) rgb(colorRamp(c("#008000", "#00ff00"))(x), maxColorValue = 255)
 ```
 
 ## Row
@@ -21,7 +21,7 @@ green_pal <- function(x) rgb(colorRamp(c("#00cc00", "#ffffff"))(x), maxColorValu
 #| content: valuebox
 #| title: "R packages"
 list(
-    icon = "stars",
+    icon = "box-fill",
     color = "#0000cc",
     value = sum(repos$type == "R package")
 )
@@ -31,7 +31,7 @@ list(
 #| content: valuebox
 #| title: "Quarto extensions"
 list(
-    icon = "stars",
+    icon = "file-text-fill",
     color = "#0000cc",
     value = sum(repos$type == "Quarto extension")
 )
@@ -51,7 +51,7 @@ list(
 #| content: valuebox
 #| title: "New issues"
 list(
-    icon = "stars",
+    icon = "exclamation-circle-fill",
     color = "#cc0000",
     value = sum(res$open_issues) - sum(last$open_issues)
 )
@@ -60,9 +60,6 @@ list(
 ## Row
 
 ```{r}
-# res$last_push <- as.character(lubridate::as_datetime(res$last_push))
-# res$last_issue_activity <- as.character(lubridate::as_datetime(res$last_issue_activity))
-
 reactable(
     res,
     defaultSorted = list(last_issue_activity = "desc"),
@@ -74,7 +71,16 @@ reactable(
             format = colFormat(datetime = TRUE),
             style = function(value) {
                 normalized <- pmin(difftime(Sys.time(), value, units = "days") / 365, 1)
-                color <- green_pal(normalized)
+                color <- if (normalized <= 0.25) {
+                    "#00cc00"
+                } else if (normalized <= 0.5) {
+                    "#00ff00"
+                } else if (normalized <= 0.75) {
+                    "#ffa500"
+                } else if (normalized > 0.75) {
+                    "#cc0000"
+                }
+                # color <- green_pal(normalized)
                 list(background = color, color = "black")
             }
         ),

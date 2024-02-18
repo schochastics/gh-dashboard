@@ -1,34 +1,34 @@
 owner,repo,type
-schochastics,graphlayouts,Rpackage
-schochastics,netrankr,Rpackage
-schochastics,snahelper,Rpackage
-schochastics,signnet,Rpackage
-schochastics,edgebundle,Rpackage
-schochastics,networkdata,Rpackage
-schochastics,roughnet,Rpackage
-schochastics,roughsf,Rpackage
-schochastics,netUtils,Rpackage
-schochastics,rokemon,Rpackage
-schochastics,levelnet,Rpackage
-schochastics,PSAWR,Rpackage
-schochastics,Rtumblr,Rpackage
-schochastics,webtrackR,Rpackage
-schochastics,webbotparseR,Rpackage
-schochastics,stabilityAI,Rpackage
-schochastics,domainator,Rpackage
-schochastics,RFPNG,Rpackage
-gesistsa,adaR,Rpackage
-gesistsa,rtoot,Rpackage
-schochastics,academicons,Quartoextension
-schochastics,devicons,Quartoextension
-schochastics,quarto-blackboard-theme,Quartoextension
-schochastics,quarto-sketchy-html,Quartoextension
-schochastics,quarto-social-share,Quartoextension
-schochastics,quarto-nutshell,Quartoextension
-schochastics,quartocities,Quartoextension
-schochastics,quarto-glossary,Quartoextension
-schochastics,quarto-cv,Quartoextension
-schochastics,classic-cv,Quartoextension
-schochastics,modern-cv,Quartoextension
-schochastics,modern2-cv,Quartoextension
-schochastics,sidebar-cv,Quartoextension
+schochastics,graphlayouts,R package
+schochastics,netrankr,R package
+schochastics,snahelper,R package
+schochastics,signnet,R package
+schochastics,edgebundle,R package
+schochastics,networkdata,R package
+schochastics,roughnet,R package
+schochastics,roughsf,R package
+schochastics,netUtils,R package
+schochastics,rokemon,R package
+schochastics,levelnet,R package
+schochastics,PSAWR,R package
+schochastics,Rtumblr,R package
+schochastics,webtrackR,R package
+schochastics,webbotparseR,R package
+schochastics,stabilityAI,R package
+schochastics,domainator,R package
+schochastics,RFPNG,R package
+gesistsa,adaR,R package
+gesistsa,rtoot,R package
+schochastics,academicons,Quarto extension
+schochastics,devicons,Quarto extension
+schochastics,quarto-blackboard-theme,Quarto extension
+schochastics,quarto-sketchy-html,Quarto extension
+schochastics,quarto-social-share,Quarto extension
+schochastics,quarto-nutshell,Quarto extension
+schochastics,quartocities,Quarto extension
+schochastics,quarto-glossary,Quarto extension
+schochastics,quarto-cv,Quarto extension
+schochastics,classic-cv,Quarto extension
+schochastics,modern-cv,Quarto extension
+schochastics,modern2-cv,Quarto extension
+schochastics,sidebar-cv,Quarto extension
