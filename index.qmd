@@ -49,7 +49,7 @@ list(
 
 ```{r}
 #| content: valuebox
-#| title: "New issues"
+#| title: "+/- Issues"
 list(
     icon = "exclamation-circle-fill",
     color = "#cc0000",
@@ -65,7 +65,13 @@ reactable(
     defaultSorted = list(last_issue_activity = "desc"),
     columns = list(
         owner = colDef(name = "Owner"),
-        repo = colDef(name = "Repository"),
+        repo = colDef(
+            name = "Repository",
+            html = TRUE,
+            cell = function(value, index) {
+                sprintf('<a href="https://github.com/%s/%s" target="_blank">%s</a>', res$owner[index], value, value)
+            }
+        ),
         last_push = colDef(
             name = "Last Push",
             format = colFormat(datetime = TRUE),
