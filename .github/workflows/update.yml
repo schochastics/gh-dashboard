@@ -3,8 +3,10 @@ on:
     - cron: '0 8 * * 1'  # Every Monday at 8 AM GMT
 
 jobs:
-  update-data:
+  update-dashboard:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     env:
       GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
@@ -17,6 +19,7 @@ jobs:
           packages: |
             any::lubridate
             any::gh
+            any::reactable
 
       - name: Check out repository
         uses: actions/checkout@v4
@@ -31,3 +34,13 @@ jobs:
           git add .
           git commit -m 'Data updated' || echo "No changes to commit"
           git push
+      
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
