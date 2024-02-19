@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: '0 8 * * 1'  # Every Monday at 8 AM GMT
+    - cron: '0 7 * * 1'  # Every Monday at 8 AM GMT
 
 jobs:
   update-dashboard:
