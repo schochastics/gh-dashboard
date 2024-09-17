@@ -107,3 +107,36 @@ reactable(
     theme = reactableTheme(backgroundColor = "#2D2D2D")
 )
 ```
+
+## Row
+
+```{r}
+#| title: CRAN Checks
+cran <- read.csv("cran_status.csv", row.names = NULL)
+reactable(cran,
+    columns = list(
+        Package = colDef(
+            style = function(value) {
+                list(background = "#2D2D2D", color = "white")
+            }
+        )
+    ),
+    defaultColDef = colDef(
+        style = function(value) {
+            color <- if (value == "ERROR") {
+                "#cc0000"
+            } else if (value == "WARNING") {
+                "#ffa500"
+            } else if (value == "NOTE") {
+                "#00ff00"
+            } else if (value == "OK") {
+                "#00cc00"
+            } else {
+                color <- "#2D2D2D"
+            }
+            list(background = color, color = "black")
+        }
+    ),
+    theme = reactableTheme(backgroundColor = "#2D2D2D")
+)
+```

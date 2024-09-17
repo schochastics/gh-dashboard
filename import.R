@@ -1,5 +1,5 @@
 library(gh)
-
+library(rvest)
 repos <- read.csv("repos.csv", row.names = NULL)
 get_repo <- function(owner, repo) {
     res_issues <- gh("/repos/{username}/{repo}/issues", username = owner, repo = repo)
@@ -28,3 +28,10 @@ lst <- lapply(seq_len(nrow(repos)), \(x) {
 res <- do.call("rbind", lst)
 write.csv(read.csv("current_week.csv", row.names = NULL), "last_week.csv", row.names = FALSE)
 write.csv(res, "current_week.csv", row.names = FALSE)
+
+# get CRAN status
+url <- "https://cran.r-project.org/web/checks/check_summary_by_package.html"
+doc <- read_html(url)
+tab <- html_table(doc)[[1]]
+me <- tab[tab$Package %in% repos$repo, -c(2, 16, 17)]
+write.csv(me, "cran_status.csv", row.names = FALSE)
