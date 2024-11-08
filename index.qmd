@@ -137,6 +137,7 @@ reactable(cran,
             list(background = color, color = "black")
         }
     ),
+    defaultPageSize = nrow(cran),
     theme = reactableTheme(backgroundColor = "#2D2D2D")
 )
 ```
