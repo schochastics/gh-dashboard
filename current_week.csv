@@ -4,7 +4,7 @@
 "schochastics","snahelper",2024-12-02 19:46:06,89,5,0,NA
 "schochastics","signnet",2025-02-05 19:43:37,23,6,0,NA
 "schochastics","edgebundle",2024-09-23 18:57:30,129,10,2,2024-06-07 13:16:53
-"schochastics","networkdata",2024-03-23 20:11:30,143,15,0,NA
+"schochastics","networkdata",2024-03-23 20:11:30,143,16,0,NA
 "schochastics","roughnet",2024-09-23 18:58:59,84,4,1,2020-10-01 11:51:26
 "schochastics","roughsf",2024-09-23 18:58:25,72,3,1,2022-01-27 20:57:41
 "schochastics","netUtils",2024-10-11 18:32:51,14,3,0,NA
@@ -26,7 +26,7 @@
 "schochastics","paperwizard",2025-02-12 10:13:18,6,0,3,2024-10-29 12:57:54
 "schochastics","RBexio",2025-02-17 12:51:59,0,0,2,2025-01-31 09:47:41
 "gesistsa","adaR",2025-04-07 06:10:13,26,3,6,2024-02-19 08:16:06
-"gesistsa","rtoot",2025-02-07 15:25:37,104,14,7,2025-04-25 06:43:27
+"gesistsa","rtoot",2025-02-07 15:25:37,105,14,7,2025-04-25 06:43:27
 "cynkra","rchroma",2025-03-27 08:31:12,16,0,3,2025-05-06 13:00:14
 "schochastics","academicons",2024-11-22 17:38:56,76,6,0,NA
 "schochastics","devicons",2024-01-12 17:47:37,5,1,0,NA
@@ -36,9 +36,9 @@
 "schochastics","quarto-nutshell",2025-02-02 19:50:50,74,1,0,NA
 "schochastics","quartocities",2022-08-18 21:31:34,22,1,0,NA
 "schochastics","quarto-glossary",2023-01-24 07:49:21,12,0,0,NA
-"schochastics","quarto-cv",2023-07-17 08:43:36,127,16,1,2024-02-26 19:40:22
+"schochastics","quarto-cv",2023-07-17 08:43:36,128,16,1,2024-02-26 19:40:22
 "schochastics","classic-cv",2023-10-16 07:00:13,16,9,0,NA
 "schochastics","modern-cv",2023-07-17 08:51:37,9,3,0,NA
-"schochastics","modern2-cv",2024-10-28 19:38:17,38,17,1,2024-01-03 07:43:41
+"schochastics","modern2-cv",2024-10-28 19:38:17,39,17,1,2024-01-03 07:43:41
 "schochastics","sidebar-cv",2024-05-24 18:03:30,6,2,1,2024-05-24 18:03:58
 "schochastics","quarto-url-peek",2025-02-19 04:23:00,3,0,0,NA
