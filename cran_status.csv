@@ -8,7 +8,7 @@
 "PSAWR","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK"
 "rchroma","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK"
 "roughnet","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK"
-"roughsf","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK"
+"roughsf","OK","OK","OK","OK","FAIL","OK","OK","OK","OK","OK","OK","OK","OK"
 "rtoot","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK"
 "Rtumblr","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK"
 "shortuuid","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK","OK"
