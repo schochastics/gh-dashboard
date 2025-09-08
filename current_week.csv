@@ -1,9 +1,9 @@
 "owner","repo","last_push","stars","forks","open_issues","last_issue_activity"
-"schochastics","graphlayouts",2025-08-24 18:26:19,280,17,2,2025-06-27 16:19:30
-"schochastics","netrankr",2025-08-24 18:22:52,49,5,0,NA
-"schochastics","snahelper",2025-08-24 18:22:50,88,6,0,NA
-"schochastics","signnet",2025-08-24 18:24:55,23,7,0,NA
-"schochastics","edgebundle",2024-09-23 18:57:30,130,10,2,2024-06-07 13:16:53
+"schochastics","graphlayouts",2025-08-24 18:26:19,281,17,4,2025-09-05 13:57:55
+"schochastics","netrankr",2025-08-24 18:22:52,49,5,2,2025-09-05 13:37:19
+"schochastics","snahelper",2025-08-24 18:22:50,88,6,2,2025-09-05 13:37:57
+"schochastics","signnet",2025-08-24 18:24:55,23,7,2,2025-09-05 13:38:33
+"schochastics","edgebundle",2024-09-23 18:57:30,131,10,2,2024-06-07 13:16:53
 "schochastics","networkdata",2025-07-02 12:20:14,144,16,0,NA
 "schochastics","roughnet",2025-07-02 14:39:51,84,4,0,NA
 "schochastics","roughsf",2024-09-23 18:58:25,72,3,1,2022-01-27 20:57:41
@@ -11,8 +11,8 @@
 "schochastics","rokemon",2022-01-11 14:26:07,95,7,0,NA
 "schochastics","levelnet",2023-01-25 07:52:32,9,0,0,NA
 "schochastics","PSAWR",2025-08-04 09:40:35,10,1,2,2023-01-20 06:51:43
-"schochastics","Rtumblr",2025-08-24 18:21:45,1,2,2,2025-07-23 11:42:12
-"gesistsa","webtrackR",2025-08-18 13:54:31,9,3,4,2024-05-03 05:05:12
+"schochastics","Rtumblr",2025-09-05 10:49:53,1,2,2,2025-07-23 11:42:12
+"gesistsa","webtrackR",2025-08-18 13:54:31,9,3,5,2025-09-05 11:06:45
 "gesistsa","webbotparseR",2025-08-18 12:23:19,8,2,2,2023-04-05 15:42:07
 "schochastics","stabilityAI",2024-01-19 20:04:38,13,1,1,2024-06-08 17:31:02
 "schochastics","domainator",2025-08-24 18:18:49,0,2,4,2023-09-13 16:45:36
@@ -36,9 +36,9 @@
 "schochastics","quarto-nutshell",2025-02-02 19:50:50,76,1,0,NA
 "schochastics","quartocities",2022-08-18 21:31:34,27,1,0,NA
 "schochastics","quarto-glossary",2023-01-24 07:49:21,12,0,0,NA
-"schochastics","quarto-cv",2023-07-17 08:43:36,140,17,1,2024-02-26 19:40:22
+"schochastics","quarto-cv",2023-07-17 08:43:36,142,17,1,2024-02-26 19:40:22
 "schochastics","classic-cv",2023-10-16 07:00:13,18,9,0,NA
 "schochastics","modern-cv",2023-07-17 08:51:37,9,3,0,NA
-"schochastics","modern2-cv",2024-10-28 19:38:17,42,18,1,2024-01-03 07:43:41
+"schochastics","modern2-cv",2024-10-28 19:38:17,43,18,1,2024-01-03 07:43:41
 "schochastics","sidebar-cv",2024-05-24 18:03:30,7,2,1,2024-05-24 18:03:58
 "schochastics","quarto-url-peek",2025-02-19 04:23:00,3,0,0,NA
