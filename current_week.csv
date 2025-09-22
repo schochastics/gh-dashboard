@@ -4,7 +4,7 @@
 "schochastics","snahelper",2025-09-08 08:31:58,88,6,1,2025-09-05 13:18:21
 "schochastics","signnet",2025-09-08 08:34:08,23,7,1,2025-09-08 13:43:11
 "schochastics","edgebundle",2024-09-23 18:57:30,131,10,2,2024-06-07 13:16:53
-"schochastics","networkdata",2025-07-02 12:20:14,145,16,0,NA
+"schochastics","networkdata",2025-09-18 18:29:59,145,16,0,NA
 "schochastics","roughnet",2025-07-02 14:39:51,84,4,0,NA
 "schochastics","roughsf",2024-09-23 18:58:25,72,3,1,2022-01-27 20:57:41
 "schochastics","netUtils",2025-07-02 14:38:15,14,3,0,NA
@@ -29,16 +29,16 @@
 "gesistsa","rtoot",2025-08-18 11:08:25,106,19,9,2025-07-23 22:49:49
 "cynkra","rchroma",2025-07-16 07:36:44,17,0,4,2025-09-10 13:13:56
 "schochastics","academicons",2024-11-22 17:38:56,83,6,0,NA
-"schochastics","devicons",2024-01-12 17:47:37,5,1,0,NA
+"schochastics","devicons",2024-01-12 17:47:37,6,1,0,NA
 "schochastics","quarto-blackboard-theme",2024-04-17 17:06:33,36,3,0,NA
 "schochastics","quarto-sketchy-html",2023-05-01 13:01:18,46,3,0,NA
-"schochastics","quarto-social-share",2024-11-19 21:19:57,39,3,1,2022-10-21 06:25:21
+"schochastics","quarto-social-share",2024-11-19 21:19:57,40,3,1,2022-10-21 06:25:21
 "schochastics","quarto-nutshell",2025-02-02 19:50:50,76,1,0,NA
 "schochastics","quartocities",2022-08-18 21:31:34,27,1,0,NA
 "schochastics","quarto-glossary",2023-01-24 07:49:21,12,0,0,NA
-"schochastics","quarto-cv",2023-07-17 08:43:36,143,17,1,2024-02-26 19:40:22
-"schochastics","classic-cv",2023-10-16 07:00:13,19,9,0,NA
+"schochastics","quarto-cv",2023-07-17 08:43:36,144,17,1,2024-02-26 19:40:22
+"schochastics","classic-cv",2023-10-16 07:00:13,20,9,0,NA
 "schochastics","modern-cv",2023-07-17 08:51:37,9,3,0,NA
-"schochastics","modern2-cv",2024-10-28 19:38:17,44,18,1,2024-01-03 07:43:41
+"schochastics","modern2-cv",2024-10-28 19:38:17,45,18,1,2024-01-03 07:43:41
 "schochastics","sidebar-cv",2024-05-24 18:03:30,7,2,1,2024-05-24 18:03:58
 "schochastics","quarto-url-peek",2025-02-19 04:23:00,3,0,0,NA
