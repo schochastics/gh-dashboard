@@ -7,11 +7,11 @@
 "schochastics","networkdata",2026-04-21 16:16:11,146,16,0,NA
 "schochastics","roughnet",2025-07-02 14:39:51,84,4,0,NA
 "schochastics","roughsf",2024-09-23 18:58:25,75,3,1,2022-01-27 20:57:41
-"schochastics","netUtils",2026-04-14 10:15:11,15,3,1,2026-02-09 16:48:20
+"schochastics","netUtils",2026-06-12 19:26:08,15,3,1,2026-02-09 16:48:20
 "schochastics","rokemon",2022-01-11 14:26:07,95,7,0,NA
 "schochastics","levelnet",2023-01-25 07:52:32,9,0,0,NA
 "schochastics","PSAWR",2025-08-04 09:40:35,10,1,2,2023-01-20 06:51:43
-"schochastics","Rtumblr",2025-09-05 10:49:53,1,2,2,2025-07-23 11:42:12
+"schochastics","Rtumblr",2026-06-10 19:36:27,1,2,0,NA
 "gesistsa","webtrackR",2026-02-17 11:23:31,10,4,5,2025-10-21 10:15:33
 "gesistsa","webbotparseR",2025-08-18 12:23:19,8,2,2,2023-04-05 15:42:07
 "schochastics","stabilityAI",2024-01-19 20:04:38,13,1,1,2024-06-08 17:31:02
@@ -30,7 +30,7 @@
 "gesistsa","adaR",2026-02-22 20:16:35,26,4,7,2026-02-22 20:17:07
 "gesistsa","rtoot",2026-02-23 15:59:16,111,19,2,2026-02-25 19:31:24
 "cynkra","rchroma",2025-07-16 07:36:44,19,1,4,2025-09-10 13:13:56
-"schochastics","ggrough2",2026-03-15 17:30:13,5,0,0,NA
+"schochastics","ggrough2",2026-03-15 17:30:13,6,0,0,NA
 "schochastics","academicons",2024-11-22 17:38:56,91,7,0,NA
 "schochastics","devicons",2024-01-12 17:47:37,6,1,0,NA
 "schochastics","quarto-blackboard-theme",2024-04-17 17:06:33,40,3,0,NA
