@@ -1,12 +1,12 @@
 "owner","repo","last_push","stars","forks","open_issues","last_issue_activity"
-"schochastics","graphlayouts","2026-06-18 18:37:54",284,19,3,"2025-09-05 13:33:04"
+"schochastics","graphlayouts","2026-07-22 10:27:42",284,19,4,"2026-07-22 09:34:10"
 "schochastics","netrankr","2025-09-23 19:48:27",49,5,1,"2025-09-05 13:10:00"
-"schochastics","snahelper","2025-10-22 05:03:45",89,6,2,"2025-10-21 10:08:30"
+"schochastics","snahelper","2025-10-22 05:03:45",89,5,2,"2025-10-21 10:08:30"
 "schochastics","signnet","2026-02-20 20:47:20",23,7,1,"2025-09-08 13:43:11"
-"schochastics","edgebundle","2024-09-23 18:57:30",138,10,2,"2024-06-07 13:16:53"
+"schochastics","edgebundle","2026-07-24 14:39:13",138,10,0,NA
 "schochastics","networkdata","2026-04-21 16:16:11",146,16,0,NA
 "schochastics","roughnet","2025-07-02 14:39:51",84,4,0,NA
-"schochastics","roughsf","2024-09-23 18:58:25",75,3,1,"2022-01-27 20:57:41"
+"schochastics","roughsf","2024-09-23 18:58:25",76,3,1,"2022-01-27 20:57:41"
 "schochastics","netUtils","2026-06-12 19:26:08",15,3,1,"2026-02-09 16:48:20"
 "schochastics","rokemon","2022-01-11 14:26:07",95,7,0,NA
 "schochastics","levelnet","2023-01-25 07:52:32",9,0,0,NA
@@ -23,9 +23,9 @@
 "schochastics","oaqc","2024-10-07 17:56:15",1,0,0,NA
 "schochastics","strzip","2024-10-25 04:33:07",1,0,0,NA
 "schochastics","startifyR","2024-10-09 07:36:58",4,0,0,NA
-"schochastics","paperwizard","2026-07-03 18:39:27",6,1,4,"2026-01-20 12:17:41"
+"schochastics","paperwizard","2026-07-27 09:40:08",6,1,4,"2026-01-20 12:17:41"
 "schochastics","RBexio","2025-02-17 12:51:59",0,0,2,"2025-01-31 09:47:41"
-"schochastics","vhsR","2026-05-05 19:15:58",11,0,1,"2026-05-07 13:12:10"
+"schochastics","vhsR","2026-05-05 19:15:58",13,0,1,"2026-05-07 13:12:10"
 "schochastics","rkeepass","2026-04-06 19:31:38",1,0,0,NA
 "gesistsa","adaR","2026-02-22 20:16:35",26,4,7,"2026-02-22 20:17:07"
 "gesistsa","rtoot","2026-02-23 15:59:16",109,19,2,"2026-02-25 19:31:24"
